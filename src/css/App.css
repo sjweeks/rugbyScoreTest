@@ -12,6 +12,20 @@ body {
   font-family: 'Playfair Display SC', serif;
 }
 
+.container{
+  box-sizing: border-box;
+  border-style: solid 20px;
+  background-color: #2d3748;
+  padding: 20px;
+  border-radius: 50px;
+  height: 500px;
+  align-content: center;
+  margin: 0 80px;
+  font-weight: 300;
+  box-shadow: -6px 4px 20px 20px rgba(0,0,0,0.18);
+}
+
+
 h1{
   color: #B48955;
   text-align: center;

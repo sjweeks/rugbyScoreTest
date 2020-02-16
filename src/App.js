@@ -76,12 +76,15 @@ class App extends Component {
 
   render () {
   return (
-    <div className="containter" >
+    <div >
       <div><Header header="Six Nations Scoreboard" /></div>
+      <br />
+      <div className="container">
       <div><Timer timerText="Timer" startButton={this.startTimer} /></div>
       <div className="Score">
-        <Score tryGoalButton={this.tryGoal} conversionButton={this.conversionGoal} penaltyButton={this.penaltyGoal} dropGoalButton={this.dropGoal} team="Team One" />
-        <Score tryGoalButton={this.tryGoalTwo} conversionButton={this.conversionGoalTwo} penaltyButton={this.penaltyGoalTwo} dropGoalButton={this.dropGoalTwo} team="Team Two" />
+        <Score tryGoalButton={this.tryGoal} conversionButton={this.conversionGoal} penaltyButton={this.penaltyGoal} dropGoalButton={this.dropGoal} team="Team One" teamScore={this.state.teamOneScore} />
+        <Score tryGoalButton={this.tryGoalTwo} conversionButton={this.conversionGoalTwo} penaltyButton={this.penaltyGoalTwo} dropGoalButton={this.dropGoalTwo} team="Team Two" teamScore={this.state.teamTwoScore} />
+      </div>
       </div>
     </div>
   )
