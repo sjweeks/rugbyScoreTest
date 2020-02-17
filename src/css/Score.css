@@ -1,0 +1,16 @@
+button {
+    font-size: 17px;
+    background-color: #2d3748;
+    color: whitesmoke;
+    border: #B48955 1px solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    box-shadow: 20px rgba(0,0,0,0.18);
+  }
+
+button :hover{
+    background-color: darkgray;
+    opacity: 0.7;
+  }
+

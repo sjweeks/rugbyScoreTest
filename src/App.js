@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './css/App.css';
+import './css/Score.css';
 import Header from './components/Header.js';
 import Timer from './components/Timer.js';
 import Score from './components/Score.js';
@@ -75,6 +76,7 @@ class App extends Component {
   }
 
   render () {
+
   return (
     <div >
       <div><Header header="Six Nations Scoreboard" /></div>
