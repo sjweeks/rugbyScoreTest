@@ -20,7 +20,7 @@ body {
   background-color: #2d3748;
   padding: 20px;
   border-radius: 50px;
-  height: 500px;
+  height: 600px;
   align-content: center;
   margin: 0 80px;
   font-weight: 300;
@@ -30,6 +30,11 @@ body {
 h1{
   color: #B48955;
   text-align: center;
+}
+
+h3{
+  color: #B48955;
+
 }
 
 .scoreButtons {
@@ -46,6 +51,11 @@ h1{
   justify-content: space-around;
   color: whitesmoke;
   font-size: 25px;
+}
+
+.scoreButtons :hover{
+  background-color: darkgray;
+  opacity: 0.7;
 }
 
 /* button {

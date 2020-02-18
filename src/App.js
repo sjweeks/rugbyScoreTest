@@ -13,11 +13,6 @@ class App extends Component {
   }
 
 
-  startTimer = () => {
-    console.log("Start Button was clicked");
-    
-  }
-
 
   tryGoal = () => {
     console.log("Try Goal was clicked");
@@ -82,11 +77,11 @@ class App extends Component {
       <div><Header header="Six Nations Scoreboard" /></div>
       <br />
       <div className="container">
-      <div><Timer timerText="Timer" startButton={this.startTimer} /></div>
-      <div className="Score">
+        <Timer />
+        <div className="Score">
         <Score tryGoalButton={this.tryGoal} conversionButton={this.conversionGoal} penaltyButton={this.penaltyGoal} dropGoalButton={this.dropGoal} team="Team One" teamScore={this.state.teamOneScore} />
         <Score tryGoalButton={this.tryGoalTwo} conversionButton={this.conversionGoalTwo} penaltyButton={this.penaltyGoalTwo} dropGoalButton={this.dropGoalTwo} team="Team Two" teamScore={this.state.teamTwoScore} />
-      </div>
+        </div>
       </div>
     </div>
   )
